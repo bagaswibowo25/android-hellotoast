@@ -4,6 +4,10 @@ apply plugin: 'java'
 
 apply plugin: 'application'
 
+plugins {
+  id "org.sonarqube" version "3.1.1"
+}
+
 
 // Top-level build file where you can add configuration options common to all sub-projects/modules.
 buildscript {
@@ -38,4 +42,13 @@ jacocoTestReport {
 //    delete rootProject.buildDir
 // }
 
+
+
+sonarqube {
+  properties {
+    property "sonar.projectKey", "misskecupbung_android-hellotoast"
+    property "sonar.organization", "misskecupbung"
+    property "sonar.host.url", "https://sonarcloud.io"
+  }
+}
 
