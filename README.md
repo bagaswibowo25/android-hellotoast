@@ -1,4 +1,4 @@
-# android-hellotoast
+# android-hellotoast.
 
 ### Requirements:
 * Android Studio 4.0.1
