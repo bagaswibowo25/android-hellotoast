@@ -23,11 +23,6 @@ pipeline {
                 gradlew('test')
             }
             post {
-                always {
-                    junit skipPublishingChecks: true, 'app/build/test-results/**/*.xml'
-                }
-            }
-            post {
                 failure {
                     mail to: 'ananda.dwirahmawati313@gmail.com', subject: 'Build failed', body: 'Please fix!'
                 }
