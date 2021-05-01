@@ -17,7 +17,7 @@ pipeline {
                 sh "gradle clean build"
             }
             post {
-                failure {
+                always {
                     mail to: 'ananda.dwirahmawati313@gmail.com', subject: 'Build failed', body: 'Please fix!'
                 }
             }
