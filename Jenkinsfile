@@ -18,7 +18,7 @@ pipeline {
             }
             post {
                 failure {
-                    mail to: 'ananda.dwirahmawati313@gmail.com', subject: 'Build failed', body: 'Please fix!'
+                    mail to: 'bagas.awibowo@gmail.com', subject: 'Build failed', body: 'Please fix!'
                 }
             }
         }
